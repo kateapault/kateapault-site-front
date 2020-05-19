@@ -23,13 +23,14 @@ class HomePage extends React.Component {
                     <div className="home-name-box">
                         
                         <div className="home-description">Full Stack Engineer</div>
+                        <div className="home-description">Python | Ruby | JavaScript</div>
                         <div className="mini-menu">
-                            <MiniMenuLine label="Summary" changeSection={this.changeSection} />
-                            <MiniMenuLine label="FAQ" changeSection={this.changeSection} />
-                            <MiniMenuLine label="Links" changeSection={this.changeSection} />
-                            <MiniMenuLine label="Blog" changeSection={this.changeSection} />
-                            <MiniMenuLine label="Portfolio" changeSection={this.changeSection} />
-                            <MiniMenuLine label="Resume" changeSection={this.changeSection} />
+                            <MiniMenuLine label="Links" currentSection={this.state.section} changeSection={this.changeSection} />
+                            {/* <MiniMenuLine label="Blog" changeSection={this.changeSection} /> */}
+                            {/* <MiniMenuLine label="Portfolio" changeSection={this.changeSection} /> */}
+                            <MiniMenuLine label="Resume" currentSection={this.state.section} changeSection={this.changeSection} />
+                            <MiniMenuLine label="Summary" currentSection={this.state.section} changeSection={this.changeSection} />
+                            <MiniMenuLine label="FAQ" currentSection={this.state.section} changeSection={this.changeSection} />
                         </div>
                         {/* <div className="important-links"> */}
                             {/* ~/kate's/<a>linkedin</a>/and/<a>github</a>/ */}
